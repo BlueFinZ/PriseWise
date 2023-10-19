@@ -1,15 +1,3 @@
-# Web Scraping Full Course 2023 | Build and Deploy eCommerce Price Tracker
-![Web Scraping](https://i.ibb.co/jR6LM2T/Thumbnail.png)
-
-## Introduction
-Dive into web scraping and build a Next.js 13 eCommerce price tracker within a single video that teaches you data scraping, cron jobs, sending emails, deployment, and more.
-
-## Become a top 1% Next.js 13 developer in only one course
-https://www.jsmastery.pro/next13
-
-## Land your dream programming job in 6 months
-https://www.jsmastery.pro/masterclass
-
 
 ## Overview
 
@@ -37,7 +25,7 @@ Follow these steps to install and run the project:
    Open your terminal and run the following command to clone the repository:
 
    ```bash
-   git clone https://github.com/adrianhajdin/pricewise.git
+   git clone https://github.com/BlueFinZ/PriseWise.git
    ```
 
 2. **Navigate to the project directory**
@@ -68,6 +56,12 @@ Follow these steps to install and run the project:
 
    ```bash
    MONGODB_URI=your_mongodb_uri
+
+   SMTP_HOST=your_smtp_host
+   SMTP_PORT=your_smtp_port
+   SMTP_USER=your_smtp_user
+   SMTP_PASSWORD=your_smtp_password
+   SMTP_SERVICE=your_smtp_service
    ```
 
 7. **Start the server**
