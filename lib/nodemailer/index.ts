@@ -86,7 +86,7 @@ const transporter: Transporter = nodemailer.createTransport({
   service: process.env.SMTP_SERVICE || 'gmail',
   auth: {
     user: process.env.SMTP_USER || 'fingrow.official@gmail.com',
-    pass: process.env.SMTP_PASSWORD || 'dkgieaayfyaacxsf',
+    pass: process.env.SMTP_PASSWORD,
   },
   secure: true, // Use secure (SSL/TLS) connection
 });
