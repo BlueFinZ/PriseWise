@@ -81,12 +81,12 @@ export async function generateEmailBody(
 }
 
 const transporter: Transporter = nodemailer.createTransport({
-  host: process.env.SMTP_HOST,
-  port: Number(process.env.SMTP_PORT || 587),
-  service: process.env.SMTP_SERVICE,
+  host: process.env.SMTP_HOST || 'smtp.gmail.com',
+  port: Number(process.env.SMTP_PORT || 465 || 587),
+  service: process.env.SMTP_SERVICE || 'gmail',
   auth: {
-    user: process.env.SMTP_USER,
-    pass: process.env.SMTP_PASSWORD,
+    user: process.env.SMTP_USER || 'fingrow.official@gmail.com',
+    pass: process.env.SMTP_PASSWORD || 'dkgieaayfyaacxsf',
   },
   secure: true, // Use secure (SSL/TLS) connection
 });
